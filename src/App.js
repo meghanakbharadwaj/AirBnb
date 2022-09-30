@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import cardData from "./Data";
+import Comments from "./components/Comment";
 
 export default function App() {
   const Info = cardData.map((data) => {
@@ -18,6 +19,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <section className="cardsList">{Info}</section>
+      <Comments />
     </div>
   );
 }
